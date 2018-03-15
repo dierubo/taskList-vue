@@ -1,10 +1,16 @@
 import InicioComponent from './componentes/inicio.vue';
 import TareasComponent from './componentes/tareas.vue';
+import UsuariosComponent from './componentes/usuarios.vue';
+import NuevoUsuarioComponent from './componentes/nuevoUsuario.vue';
 
 // Será siempre un array de objetos
 export const rutas = [
     { path: '', component: InicioComponent },
     { path: '/tareas', component: TareasComponent },
+    { path: '/usuarios', component: UsuariosComponent, name: 'usuarios'}, 
+    { path: '/newUser', component: NuevoUsuarioComponent, name: 'nuevoUsuario' },
+    { path: '/users', redirect: '/usuarios'},
+    { path: '*', redirect: ''}, // para cualquier cosa lleva a la página de inicio
 ]
 
 // {

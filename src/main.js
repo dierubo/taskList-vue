@@ -2,7 +2,6 @@ import Vue from 'vue';
 import App from './App.vue';
 import VueResource from 'vue-resource';
 import VueRouter from 'vue-router';
-// Como 'rutas' viene del archivos rutas.js a través de un export, hay que importarlo a través de las llaves {}
 import { rutas } from './rutas.js';
 
 

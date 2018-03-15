@@ -28,7 +28,7 @@ export default {
                     let objTarea = {
                         id: respuesta.body.name, // El id que da firebase a la tarea
                         nombreTarea: agregarTarea,
-                        finalizada: false,
+                        finalizadaTarea: false,
                     }
 
                     //Se guarda la tarea en la variable 'tareas' pasada por su padre 'tareas.vue'

@@ -1,7 +1,7 @@
 <template>
     <div class="wrap-listaTareas">
         <div class="item-tarea" v-for="(tarea, indice) in tareas">
-            <div class="value-item-tarea" :class="{finalizada: tarea.finalizada}">
+            <div class="value-item-tarea" :class="{finalizada: tarea.finalizadaTarea}">
                 {{ tarea.nombreTarea }}
             </div>
             <div class="btn-item-tarea">
@@ -16,7 +16,7 @@
         props: ['tareas'],
         data() {
             return {
-
+                
             }
         },
         methods: {
@@ -37,8 +37,8 @@
                 }
             },
             estadoTarea(indice) {
-
-                let finalizadaTarea = this.tareas[indice].finalizada = !this.tareas[indice].finalizada; // Se guarda el estado y se cambia en la pantalla
+                console.log("eaaaa");
+                let finalizadaTarea = this.tareas[indice].finalizadaTarea = !this.tareas[indice].finalizadaTarea; // Se guarda el estado y se cambia en la pantalla
                 
                 // console.log(this.tareas[indice]);
                 let idTarea = this.tareas[indice].id;
